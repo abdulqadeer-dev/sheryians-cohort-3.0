@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Google Sans;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    width: 100%;
+    background-color: #010101;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+header button {
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+header button:hover {
+    background-color: #272727;
+}
+
+#blogs-main {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 6.5vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#filter-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#filter-wraper .filter {
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #141414;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+#filter-wraper .filter:hover {
+    background-color: #272727;
+}
+
+#filter-wraper .filter-active {
+    background-color: #FD4A09;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;   
+}
+
+.blogs-cards-wraper {
+    display: flex;
+    gap: 30px;
+    padding: 0px 50px;
+}
+
+.blog-card {
+    width: 33.33%;
+    background-color: #141414;
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.blog-category {
+    color: #F39C6D;
+    background-color: #571D0A;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.content h2 {
+    font-weight: 500;
+    margin-top: 30px;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.publish-date {
+    color: #7a7a7a;
+    font-size: 15px;
+}

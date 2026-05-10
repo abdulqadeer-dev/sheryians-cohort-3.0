@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: Inria Serif;
+}
+
+.product-link {
+    display: block !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    width: 25%;
+}
+
+body {
+    background-color: #090909;
+    padding: 20px 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+#products-wraper {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    padding: 20px 40px;
+    width: 100%;
+    border: 1px solid #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    background-color: #0f0e0d;
+}
+
+.product:hover {
+    border-color: #F0800E;
+    background-color: #f07f0e10;
+}
+
+.product img {
+    width: 80%;
+    object-fit: contain;
+    margin-top: 15px;
+    height: 300px;
+}
+
+.product h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p-divider {
+    width: 50px;
+    height: 2px;
+    background-color: #F0800E;
+    margin-top: 20px;
+}
+
+.product p {
+    text-align: center;
+    font-family: Poppins, Helvetica, sans-serif;
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 25px;
+    font-family: Poppins, Helvetica, sans-serif;
+    margin-top: 15px;
+    color: #F0800E;
+}
+
+.tag {
+    border: 1px solid #F0800E;
+    color: #F0800E;
+    padding: 5px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: Poppins, Helvetica, sans-serif;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    /* display: none; */
+}
+
+section img {
+    width: 400px;
+}
+
+.col {
+    display: flex;
+    border: 1px solid #1d1d1d;
+    margin-top: 30px;
+    border-radius: 30px;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 80px;
+    background-color: #0f0e0d;
+}
+
+.col span {
+    color: #F0800E;
+    font-size: 17px;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+.col h2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.col p {
+    color: #818181;
+    font-family: Poppins, Helvetica, sans-serif;
+    width: 90%;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.col button {
+    border: 1px solid #F0800E;
+    border-radius: 50px;
+    padding: 12px 40px;
+    color: #F0800E;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.col button:hover {
+    background-color: #F0800E;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid #F0800E;
+    color: #818181;
+    position: relative;
+}
+
+.f-logo {
+    font-family: Poppins;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .bullet {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #F0800E;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: Poppins;
+}
+
+.socials i {
+    color: #F0800E;
+    padding: 6px;
+    border: 1px solid #F0800E;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
