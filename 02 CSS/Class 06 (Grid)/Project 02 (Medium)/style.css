@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #0B0B0B;
+    font-family: Google Sans Flex;
+}
+
+/* 5col 5row */
+
+section {
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, .5fr) 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "intro intro img-1 img-2 socials"
+    "intro intro img-1 img-2 resources"
+    "img-3 stack landscape-img landscape-img resources"
+    "img-3 stack landscape-img landscape-img toggle"
+    "framer framer framer cta cta";
+}
+
+section > div {
+    background-color: #1d1d1d;
+    padding: 10px 15px;
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.intro .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro .top img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.intro .top h5 {
+    font-weight: 600;
+}
+
+.intro .top span {
+    font-size: 11px;
+    color: #9b9b9b;
+}
+
+.intro h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+.intro p {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.5em;
+    color: #9b9b9b;
+}
+
+.img-1 {
+    grid-area: img-1;
+    background: url(./images/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.img-2 {
+    grid-area: img-2;
+    background: url(./images/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.socials > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.socials div:nth-child(2) {
+    margin-top: 15px;
+}
+
+.socials > div i {
+    background-color: #323232;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.img-3 {
+    grid-area: img-3;
+    background: url(./images/img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stack {
+    grid-area: stack;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stack span {
+    color: #9b9b9b;
+    font-size: 13px;
+}
+
+.stack h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.stack > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.stack .col {
+    flex-direction: column;
+}
+
+.stack > div i {
+    background-color: #323232;
+    padding: 5px;
+    border-radius: 3px;
+}  
+
+.landscape-img {
+    grid-area: landscape-img;
+    background: url(./images/img-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resources {
+    grid-area: resources;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resources span {
+    color: #9b9b9b;
+    font-size: 13px;
+}
+
+.resources h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.resources i {
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.toggle {
+    grid-area: toggle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle i {
+    font-size: 35px;
+}
+
+.framer {
+    grid-area: framer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.framer div {
+    width: 60%;
+}
+
+.framer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+}
+
+.framer p {
+    color: #9b9b9b;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.framer i {
+    font-size: 60px;
+    padding: 10px;
+}
+
+.cta {
+    grid-area: cta;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cta span {
+    color: #9b9b9b;
+    font-size: 13px;
+}
+
+.cta h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.cta p {
+    color: #9b9b9b;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.cta .icon-wraper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta i {
+    font-size: 25px;
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    font-family: Google Sans Flex;
+    color: #fff;
+}
+
+/* 
+5 row
+4 col
+Anton SC
+Google Sans Flex
+*/
+
+section {
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 15% 20% 30% 15% 25%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "img-1 img-1 menu smile"
+    "img-1 img-1 menu img-2"
+    "butusic location menu img-2"
+    "butusic achievement best-authors best-authors"
+    "butusic qr-code best-authors best-authors";
+}
+
+.img-1 {
+    background-color: antiquewhite;
+    grid-area: img-1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 50px;
+    background-color: #0E0E0D;
+    border: 1px solid #212120;
+    border-radius: 10px;
+}
+
+.img-1 img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+}
+
+.img-1 .img-2 {
+    width: 35%;
+    height: 100%;
+}
+
+.menu {
+    grid-area: menu;
+    padding: 0px;
+    background-color: #0E0E0D;
+    border: 1px solid #212120;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mail {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.mail:hover {
+    background-color: #3c3c3c7c;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.wraper div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.wraper div:hover {
+    background-color: #3c3c3c7c;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.menu i {
+    font-size: 20px;
+}
+
+.wraper i {
+    font-size: 20px;
+}
+
+.smile {
+    background: linear-gradient(to right, #7337C9, #A256F6);;
+    display: flex;
+    align-items: center;
+    grid-area: smile;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.smile .divider {
+    height: 80%;
+    width: 1px;
+    background-color: #fff;
+}
+
+.smile .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smile i {
+    font-size: 25px;
+}
+
+.smile .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smile p {
+    font-size: 13px;
+}
+
+.butusic {
+    background-color: #0E0E0D;
+    border: 2px solid #ffff00;
+    border-radius: 10px;
+    grid-area: butusic;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.butusic h1 {
+    font-family: Anton SC;
+    font-weight: 300;
+    font-size: 7vw;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.butusic > span {
+    color: #4891E0;
+}
+
+.butusic .bitcoin-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+}
+
+.butusic .bitcoin-box p {
+    font-size: 14px;
+}
+
+.butusic .bitcoin-box i {
+    font-size: 35px;
+    background-color: #4891E0;
+    color: #000;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.butusic img {
+    width: 100%;
+}
+
+.location {
+    background-color: #0E0E0D;
+    border: 1px solid #212120;
+    grid-area: location;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location .btm span {
+    color: #4f4f4f;
+    font-size: 13px;
+}
+
+.location .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location .icon-box i {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffff00;
+    color: #000;
+    font-size: 20px;
+}
+
+.location .icon-box p {
+    font-size: 12px;
+}
+
+.img-2 {
+    background-image: url(./images/avatar-2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: img-2;
+    border-radius: 10px;
+}
+
+.achievement {
+    background-color: #0E0E0D;
+    border: 1px solid #212120;
+    grid-area: achievement;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.achievement img {
+    width: 17%;
+}
+
+.qr-code {
+    background-color: #D7F259;
+    grid-area: qr-code;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 12px;
+    color: #000;
+    border-radius: 8px;
+}
+
+.qr-code img {
+    width: 35%;
+}
+
+.qr-code .appstore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qr-code .appstore h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.qr-code .appstore i {
+    font-size: 25px;
+}
+
+.qr-code p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.best-authors {
+    background-color: #FEFEFE;
+    grid-area: best-authors;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.best-authors .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best-authors .left h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.best-authors .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.best-authors .right  h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.best-authors .right div i {
+    font-size: 20px;
+    color: #D7F259;
+}
+
+.best-authors .right .btn {
+    color: #fff;
+    padding: 8px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7337C9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

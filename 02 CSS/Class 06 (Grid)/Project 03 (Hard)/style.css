@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Space Grotesk;
+}
+
+/* col-5
+rows -  */
+
+section {
+    width: 90%;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr 3.2fr 2.2fr 2.2fr 2.2fr;
+    grid-template-rows: 2fr 5fr 3fr;
+    padding: 30px 20px;
+    padding-left: 0px;
+    gap: 20px;
+    grid-template-areas:
+        "left-bar intro top-text top-text top-text"
+        "left-bar intro landscape-img landscape-img stats"
+        "left-bar intro apple awwards awwards";
+}
+
+section>div {
+    border-radius: 20px;
+}
+
+.left-bar {
+    grid-area: left-bar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.left-bar span {
+    transform: rotate(270deg);
+    white-space: nowrap;
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
+    background-color: #797BD3;
+    color: #fff;
+}
+
+.intro .absolute-img {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 78%;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.intro h2 {
+    font-size: 5vw;
+    line-height: 1em;
+    font-weight: 600;
+    z-index: 1199;
+}
+
+.intro .thin-text {
+    font-weight: 400;
+}
+
+.intro .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.intro .content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.intro .mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-bottom: 1px dashed #000;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.intro .image-wraper {
+    position: absolute;
+}
+
+.top-text {
+    grid-area: top-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-text h1 {
+    font-size: 6.5vw;
+    text-align: center;
+}
+
+.landscape-img {
+    grid-area: landscape-img;
+    background: url(./images/art.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landscape-img i {
+    background-color: #ffffffcf;
+    padding: 15px;
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+    font-size: 30px;
+}
+
+.stats {
+    grid-area: stats;
+    overflow: hidden;
+}
+
+.stats .box {
+    text-align: center;
+    height: 50%;
+    padding: 30px;
+    background-color: #8E6FBE;
+    color: #fff;
+}
+
+.stats .box h3 {
+    font-size: 40px;
+}
+
+.stats .box1 {
+    background-color: #ABD9D7;
+    color: #000;
+}
+
+.apple {
+    grid-area: apple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: #585858;
+    color: #fff;
+    gap: 8px;
+}
+
+.apple h3 {
+    font-weight: 400;
+}
+
+.apple i {
+    font-size: 40px;
+}
+
+.awwards {
+    grid-area: awwards;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #020000;
+    overflow: hidden;
+}
+
+.awwards img {
+    width: 120px;
+    margin: 0px auto;
+}
+
+.awwards .box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #FEC267;
+    border-radius: 20px;
+}
+
+.awwards .box p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.awwards .box p span {
+    font-size: 20px;
+}
